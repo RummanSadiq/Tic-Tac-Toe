@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane  alignment="center" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-alignment: center; -fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnSpan="3" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="turnId" alignment="CENTER" layoutX="120.0" layoutY="7.0" text="It's your turn!" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Pane onMouseClicked="#handleAction1" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="position1" layoutX="42.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction4" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="position4" layoutX="43.0" layoutY="11.0" text="">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction2" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="position2" layoutX="43.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction5" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="position5" layoutX="42.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction3" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="position3" layoutX="43.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction6" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="position6" layoutX="43.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction7" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="position7" layoutX="43.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction8" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="position8" layoutX="43.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane onMouseClicked="#handleAction9" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 3;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="position9" layoutX="42.0" layoutY="10.0" text="">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane prefHeight="62.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.vgrow="NEVER">
+         <children>
+            <Button fx:id="refreshButton" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleRefreshButton" text="Refresh" textAlignment="CENTER" GridPane.columnIndex="1" />
+         </children>
+      </Pane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="36.0" layoutY="4.0" text="You" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="youScore" layoutX="47.0" layoutY="4.0" text="0" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="2">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="4.0" text="Computer" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="computerScore" layoutX="47.0" layoutY="4.0" text="0" />
+               </children>
+            </Pane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</GridPane>
